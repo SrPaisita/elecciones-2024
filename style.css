@@ -1,0 +1,185 @@
+* {
+    font-family: montserrat;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+}
+
+header img {
+    width: 140px;
+}
+
+header h2 {
+    margin-left: 5px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+header a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.home-section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/simpson-sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#initial-text {
+    font-family: "Rock Salt", cursive;
+}
+.home-section h1 {
+    font-size: 48px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.frase-section {
+    height: 100px;
+    background-color: rgb(107, 170, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.frase-section h2 {
+    font-size: 32px;
+    color: white;
+}
+.button-especial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-section {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.about-section img {
+    border-radius: 175px;
+    width: 350px;
+}
+.about-section p{
+    font-size: 24px;
+}
+.propuesta-section {
+    padding: 15px 15px;
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    /* background-image: url(img/simpson-sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.propuesta-section img {
+    width: 50%;
+    margin: 30px 0;
+}
+.propuesta-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.propuesta-section p {
+    font-size: 24px;
+}
+
+.izq h2{
+    color: rgb(177, 177, 54);
+}
+
+.der h2 {
+    color: blue;
+}
+.buttons-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+.buttons-content article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: rgb(243, 224, 14);
+}
+.buttons-content h2 {
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+}
+.buttons-content img {
+    border-radius: 50%;
+    width: 200px;
+}
+@media (max-width: 900px) {
+    .home-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-section h1 {
+        font-size: 30px;
+    }
+    .home-section img {
+        width: 300px;
+    }
+    .propuesta-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .propuesta-section h1 {
+        font-size: 30px;
+    }
+    .propuesta-section img {
+        width: 300px;
+    }
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-section img {
+        width: 230px;
+    }
+    .frase-section h2 {
+        font-size: 26px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+}
